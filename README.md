@@ -121,3 +121,47 @@ Markdown is a simple, flexible, and powerful language for creating documents and
 - *Italic Text:* `*Italic*`
 - `Inline Code:` `` `Code` ``
 - [Hyperlink Example](https://example.com)
+Updated by Jayani as part of Git workshop Task2
+
+# Task 2
+
+### Go to projects directory
+```bash
+cd C:\Users\JAYANI\Documents\projects
+```
+
+### Clone the given repository
+```bash
+git clone https://github.com/Lexicon-Smaland/Hello-World.git
+```
+
+### Enter the cloned repository and and Check the current remote
+```bash
+cd Hello-World
+git remote -v
+```
+It shows :
+```bash
+origin  https://github.com/Lexicon-Smaland/Hello-World.git (fetch)
+origin  https://github.com/Lexicon-Smaland/Hello-World.git (push)
+```
+
+### Create new repo on GitHub, named as "git-workshop-hw" and replace the origin
+```bash
+git remote set-url origin https://github.com/jayani-athukorala/git-workshop-hw.git
+git remote -v
+```
+Now it shows:
+```bash
+origin  https://github.com/jayani-athukorala/git-workshop-hw.git (fetch)
+origin  https://github.com/jayani-athukorala/git-workshop-hw.git (push)
+```
+
+### Modify README.md and commit and push
+```bash
+Add-Content README.md "Updated by Jayani as part of Git workshop Task2"
+git status
+git add .\README.md
+git commit -m "Update README with Task2 commands"
+git push -u origin main
+```
